@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">library_base</string>
+    <string name="emptytext">没有更多内容</string>
+    <string name="click_me_to_retry">click me to retry!</string>
+    <string name="settipsno">网络连接不可用，请检查设置网络。</string>
+    <string name="loading">正在加载···</string>
+</resources>

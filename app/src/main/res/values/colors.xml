@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black30">#333333</color>
+    <color name="color_c">#cccccc</color>
+    <color name="color_5">#555555</color>
+    <color name="color_6">#666666</color>
+    <color name="color_8">#888888</color>
+    <color name="color_9">#999999</color>
+    <color name="color_bg">#e7e7e7</color>
+    <color name="color_xian">#f5f4f9</color>
+    <color name="color_bian">#f0eef5</color>
+    <color name="color_hong">#fb5652</color>
+    <color name="color_huang">#f3b048</color>
+
+    <color name="num">#D27206</color>
+    <color name="qinyou">#1A8F0B</color>
+    <color name="contents_text">#ff333333</color>
+
+    <color name="help_button_view">#f5f4f9</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_view">#90000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="status_view">#50000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#3d92cd</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_border">#44b5fd</color>
+    <color name="letterbg">#99ffffff</color>
+    <color name="huise">#878A99</color>
+    <color name="bg_nocolor">#E6E6E6</color>
+    <color name="bg_color">#bfbfbf</color>
+    <color name="green_color">#53a000</color>
+    <color name="dialog_red_color">#ff2114</color>
+    <color name="dialog_blue_color">#9fd6f4</color>
+    <color name="bule2">#598abf</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="ding_color">#ff472e</color>
+    <color name="ding_d">#7dcae9</color>
+    <color name="edittextcolor">#598abf</color>
+
+    <color name="c_ff">#ffffff</color>
+    <color name="c_4697fa">#4697FA</color>
+    <color name="c_1a">#1A1A1A</color>
+    <color name="c_e1e1e1">#E1E1E1</color>
+    <color name="c_2E3135">#2E3135</color>
+    <color name="c_99">#999999</color>
+    <color name="c_48">#484848</color>
+    <color name="c_FF2B33">#FF2B33</color>
+    <color name="c_E24333">#E24333</color>
+    <color name="c_009A61">#009A61</color>
+    <color name="c_3073FF">#3073FF</color>
+
+</resources>

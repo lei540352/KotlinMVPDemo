@@ -1,0 +1,71 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+android {
+    compileSdkVersion cfgs.compileSdkVersion
+    buildToolsVersion cfgs.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion cfgs.minSdkVersion
+        targetSdkVersion cfgs.targetSdkVersion
+        versionCode cfgs.versionCode
+        versionName cfgs.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$cfgs.kotlinx"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$cfgs.kotlinx"
+
+    api "androidx.core:core-ktx:$cfgs.android_ktx"
+    api "androidx.constraintlayout:constraintlayout:$cfgs.constraintlayout"
+    api "androidx.appcompat:appcompat:$cfgs.appcompat"
+    api "androidx.recyclerview:recyclerview:$cfgs.recyclerview"
+    api "com.google.android.material:material:$cfgs.material"
+    api "com.squareup.okhttp3:okhttp:$cfgs.okhttp3"
+    api "com.github.bumptech.glide:glide:$cfgs.glide"
+    // 指定下载编译百度移动统计JAR
+    api "com.google.code.gson:gson:$cfgs.gson"
+    // Retrofit库
+    api "com.squareup.retrofit2:retrofit:$cfgs.retrofit2"
+    api "com.squareup.retrofit2:adapter-rxjava2:$cfgs.retrofit2"
+    api "com.squareup.retrofit2:converter-gson:$cfgs.retrofit2"
+    // 日志的拦截器，也可以自行选择
+    api "com.squareup.okhttp3:logging-interceptor:$cfgs.okhttp3"
+    api "io.reactivex.rxjava2:rxjava:$cfgs.rxjava2"
+    api "io.reactivex.rxjava2:rxandroid:$cfgs.rxandroid2"
+    api "com.jakewharton.rxbinding2:rxbinding:$cfgs.rxbinding2"
+
+    api "com.trello.rxlifecycle2:rxlifecycle:$cfgs.rxlifecycle"
+    api "com.trello.rxlifecycle2:rxlifecycle-android:$cfgs.rxlifecycle"
+    api "com.trello.rxlifecycle2:rxlifecycle-components:$cfgs.rxlifecycle"
+
+    testImplementation "junit:junit:4.12"
+    androidTestImplementation "androidx.test.ext:junit:1.1.0"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.1.1"
+
+    api "com.facebook.stetho:stetho:$cfgs.facebook"
+    api "com.facebook.stetho:stetho-okhttp3:$cfgs.facebook_okhttp3"
+
+    api "com.ashokvarma.android:bottom-navigation-bar:$cfgs.navigationVersion"
+//    api "com.kingja.loadsir:loadsir:${cfgs.loadsir}"
+    api "com.airbnb.android:lottie:${cfgs.lottie}"
+    api project(path: ':loadsir')
+}
